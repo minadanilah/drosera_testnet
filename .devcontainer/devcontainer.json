@@ -1,0 +1,14 @@
+{
+  "name": "Node.js & Ubuntu 22.04",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y nodejs npm",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.node-debug2",
+    "dbaeumer.vscode-eslint"
+  ],
+  "forwardPorts": [3000],
+  "remoteUser": "vscode"
+}
